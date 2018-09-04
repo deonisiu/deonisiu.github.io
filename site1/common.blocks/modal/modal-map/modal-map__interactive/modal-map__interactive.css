@@ -1,0 +1,5 @@
+.modal-map__interactive {
+    position: relative;
+
+    z-index: 2;
+}

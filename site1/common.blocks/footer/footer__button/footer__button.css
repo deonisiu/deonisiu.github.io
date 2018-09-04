@@ -1,0 +1,9 @@
+.footer__button {
+    outline: none;
+}
+
+.footer__button:hover,
+.footer__button:focus {
+    background-color: white;
+    color: #000;
+}

@@ -1,0 +1,21 @@
+@import "header__link--current/header__link--current.css";
+
+.header__link {
+    /* Design */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+
+    /* Position */
+    position: relative;
+    display: block;
+    padding: 26px 20px;
+    white-space: nowrap;
+}
+
+.header__link:hover,
+.header__link:focus {
+    background-color: #242424;
+}

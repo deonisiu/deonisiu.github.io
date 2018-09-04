@@ -1,0 +1,20 @@
+.features__title {
+    margin: 0;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.features__title::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+
+    transform: translate(-50%, 0) rotate(45deg);
+    top: 125%;
+    left: 50%;
+}

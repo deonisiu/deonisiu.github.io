@@ -1,0 +1,14 @@
+@import "modal-map__image/modal-map__image.css";
+@import "modal-map__interactive/modal-map__interactive.css";
+
+.modal-map {
+    width: 766px;
+    height: 560px;
+
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border: 6px solid #fff;
+}

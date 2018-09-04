@@ -1,0 +1,9 @@
+.header__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    left: 20px;
+    height: 5px;
+    background-color: white;
+}

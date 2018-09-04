@@ -1,0 +1,18 @@
+.main-wrapper {
+    position: relative;
+    background: url("../../images/texture/index-texture.jpg") 0 0 repeat;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    padding: 56px 80px 50px;
+}
+
+.main-wrapper::after {
+    content: "";
+    position: absolute;
+    background: url("shadow.png") 0 0 no-repeat;
+    width: 8px;
+    height: 278px;
+    left: 50%;
+    top: 18%;
+}

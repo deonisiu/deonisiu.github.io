@@ -1,0 +1,13 @@
+.modal-login__wrapper {
+    margin: 10px 0 14px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-login__wrapper :first-child {
+    padding-left: 30px;
+    position: relative;
+
+    cursor: pointer;
+}

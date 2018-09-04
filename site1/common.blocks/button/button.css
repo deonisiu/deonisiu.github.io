@@ -1,0 +1,25 @@
+@import "button-wrapper/button-wrapper.css";
+
+.button {
+    display: inline-block;
+    min-width: 140px;
+    min-height: 44px;
+    background-color: black;
+    color: white;
+    border: none;
+    font: 14px/24px "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+}
+
+.button-a {
+    min-height: 24px;
+    padding: 10px 0;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #673d15;
+}

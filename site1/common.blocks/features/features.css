@@ -1,0 +1,9 @@
+@import "features__list/features__list.css";
+@import "features__item/features__item.css";
+@import "features__title/features__title.css";
+
+.features {
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding: 0;
+}

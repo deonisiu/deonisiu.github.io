@@ -1,0 +1,9 @@
+@import "footer__contacts/footer__contacts.css";
+@import "footer__social/footer__social.css";
+@import "footer__copyright/footer__copyright.css";
+@import "footer__button/footer__button.css";
+
+.footer {
+    background: url("footer-texture.jpg") 0 0;
+    padding-top: 65px;
+}

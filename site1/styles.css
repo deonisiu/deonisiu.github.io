@@ -1,0 +1,36 @@
+@import "common.blocks/visually-hidden/visually-hidden.css";
+@import "common.blocks/form/form.css";
+@import "common.blocks/text/text.css";
+@import "common.blocks/list/list.css";
+@import "common.blocks/align-container/align-container.css";
+@import "common.blocks/header/header.css";
+@import "common.blocks/nav/nav.css";
+@import "common.blocks/order/order.css";
+@import "common.blocks/features/features.css";
+@import "common.blocks/main/main.css";
+@import "common.blocks/gallery/gallery.css";
+@import "common.blocks/news/news.css";
+@import "common.blocks/button/button.css";
+@import "common.blocks/appointment/appointment.css";
+@import "common.blocks/footer/footer.css";
+@import "common.blocks/social/social.css";
+@import "common.blocks/modal/modal-common.css";
+
+@import "common.blocks/js-code/js-code.css";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 940px;
+
+    background: #000 url("img/jpg/main-background.jpg") no-repeat top center;
+    font: 14px/24px "PT Sans Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 42px;
+}

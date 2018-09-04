@@ -1,0 +1,9 @@
+@import "appointment__input/appointment__input.css";
+@import "appointment__form/appointment__form.css";
+@import "appointment__wrapper/appointment__wrapper.css";
+@import "appointment__text/appointment__text.css";
+@import "appointment__button/appointment__button.css";
+
+.appointment {
+    max-width: 300px;
+}

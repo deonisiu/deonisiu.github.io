@@ -1,0 +1,17 @@
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: black;
+
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.social__item:hover path,
+.social__item:focus path {
+    fill: #000;
+}

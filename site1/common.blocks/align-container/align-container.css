@@ -1,0 +1,8 @@
+.align-container {
+    box-sizing: border-box;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}

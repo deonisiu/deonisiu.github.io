@@ -1,0 +1,13 @@
+.modal-login__input {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-right: 40px;
+}
+
+.modal-login__input[type="text"] {
+    background: url("../../../../img/user.svg") 270px center no-repeat;
+}
+
+.modal-login__input[type="password"] {
+    background: url("../../../../img/lock.svg") 270px center no-repeat;
+}

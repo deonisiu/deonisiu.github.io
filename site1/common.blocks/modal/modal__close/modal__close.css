@@ -1,0 +1,49 @@
+.modal__close {
+    /* Size */
+    width: 24px;
+    height: 24px;
+
+    /* Position */
+    position: absolute;
+    left: 100%;
+    top: 12px;
+    transform: translate( 50%, 0 );
+
+    /* Design */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    outline: none;
+}
+
+.modal__close:hover::after,
+.modal__close:hover::before,
+.modal__close:focus::after,
+.modal__close:focus::before {
+    background-color: #693d16;
+}
+
+.modal__close::before,
+.modal__close::after{
+    content: "";
+    width: 24px;
+    height: 4px;
+
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+    background-color: #d0d0d0;
+}
+
+.modal__close::after {
+    transform: rotate( 45deg );
+}
+
+.modal__close::before {
+    transform: rotate( -45deg );
+}

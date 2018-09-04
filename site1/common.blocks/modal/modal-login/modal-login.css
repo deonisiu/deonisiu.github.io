@@ -1,0 +1,15 @@
+@import "modal-login__form/modal-login__form.css";
+@import "modal-login__input/modal-login__input.css";
+@import "modal-login__wrapper/modal-login__wrapper.css";
+
+.modal-login {
+    width: 300px;
+
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    padding: 50px 80px 58px;
+    background: white url("../../images/texture/index-texture.jpg");
+}

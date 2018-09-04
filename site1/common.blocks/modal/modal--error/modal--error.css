@@ -1,0 +1,10 @@
+@keyframes error_shake {
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-51%) }
+    20%, 40%, 60%, 80% { transform: translateX(-49%) }
+    100% { transform: translateX(-50%) }
+}
+
+.modal--error {
+    animation-name: error_shake;
+    animation-duration: 0.6s;
+}

@@ -1,0 +1,10 @@
+@import "header__nav/header__nav.css";
+@import "header__link/header__link.css";
+@import "header__item/header__item.css";
+@import "header__wrapper/header__wrapper.css";
+@import "header__container/header__container.css";
+
+.header {
+    min-height: 285px;
+    margin-bottom: 80px;
+}

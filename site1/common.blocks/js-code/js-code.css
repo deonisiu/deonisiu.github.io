@@ -1,0 +1,15 @@
+.js-code {
+    position: relative;
+}
+
+.js-code::after {
+    content: "JS";
+    width: 6px;
+    height: 6px;
+
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+
+    color: orange;
+}
