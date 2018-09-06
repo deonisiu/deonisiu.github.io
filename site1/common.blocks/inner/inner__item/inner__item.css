@@ -1,0 +1,17 @@
+.inner__item {
+    position: relative;
+}
+
+.inner__item::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+
+    position: absolute;
+    top: 9px;
+    left: -10px;
+
+    transform: translateX(-100%) rotate(45deg);
+
+    background-color: #000;
+}

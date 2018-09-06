@@ -1,0 +1,11 @@
+.inner__table {
+    width: 100%;
+}
+
+.inner__table td {
+    width: 50%;
+}
+
+.inner__table td:nth-child(2) {
+    text-align: center;
+}

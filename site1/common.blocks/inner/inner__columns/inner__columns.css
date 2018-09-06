@@ -1,0 +1,26 @@
+.inner__columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 60px 0;
+}
+
+.inner__columns div {
+    width: 460px;
+}
+
+.inner__columns > h2:first-child {
+    width: 100%;
+    /* margin-right: calc(100% - 460px);*/
+
+    margin-top: 0;
+}
+
+.inner__columns div :first-child {
+margin-top: 0;
+}
+
+.inner__columns div :last-child {
+margin-bottom: 0;
+}

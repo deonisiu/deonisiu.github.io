@@ -1,0 +1,30 @@
+.inner__content .inner__big-title {
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.inner__big-title {
+    font-size: 48px;
+    line-height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.inner__big-title::after,
+.inner__big-title::before {
+    content: "";
+
+    height: 2px;
+    flex-grow: 1;
+
+    background-color: #000;
+}
+
+.inner__big-title::after {
+    margin-left: 26px;
+}
+
+.inner__big-title::before {
+    margin-right: 26px;
+}

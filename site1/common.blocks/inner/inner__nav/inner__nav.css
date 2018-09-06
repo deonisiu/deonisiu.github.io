@@ -1,0 +1,9 @@
+.inner__nav {
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 940px;
+    max-height: 72px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}

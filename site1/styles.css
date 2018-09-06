@@ -15,9 +15,16 @@
 @import "common.blocks/footer/footer.css";
 @import "common.blocks/social/social.css";
 @import "common.blocks/modal/modal-common.css";
+@import "common.blocks/inner/inner.css";
+@import "common.blocks/breadcrumbs/breadcrumbs.css";
 
 @import "common.blocks/js-code/js-code.css";
+@import "common.blocks/working/working.css";
 
+.inner {
+    background: #fff url("common.blocks/images/texture/index-texture.jpg") repeat;
+
+}
 
 body {
     margin: 0;
@@ -29,7 +36,7 @@ body {
     text-transform: uppercase;
 }
 
-h2, h3 {
+h1, h2, h3 {
     margin: 0;
     font-size: 30px;
     line-height: 42px;

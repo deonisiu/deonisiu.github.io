@@ -1,0 +1,9 @@
+@import "breadcrumbs--current/breadcrumbs--current.css";
+@import "breadcrumbs__link/breadcrumbs__link.css";
+
+.breadcrumbs {
+    display: flex;
+
+    padding: 0;
+    list-style-type: none;
+}

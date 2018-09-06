@@ -1,0 +1,14 @@
+@import "inner__nav/inner__nav.css";
+@import "inner__logo/inner__logo.css";
+@import "inner__header/inner__header.css";
+@import "inner__content/inner__content.css";
+@import "inner__item/inner__item.css";
+@import "inner__big-title/inner__big-title.css";
+@import "inner__list/inner__list.css";
+@import "inner__table/inner__table.css";
+@import "inner__footer/inner__footer.css";
+@import "inner__columns/inner__columns.css";
+
+.inner {
+
+}

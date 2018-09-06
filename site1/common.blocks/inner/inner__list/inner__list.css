@@ -1,0 +1,23 @@
+.inner__list {
+    padding-left: 18px;
+    list-style-type: none;
+}
+
+.inner__list li {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inner__list li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+
+    position: absolute;
+    top: 9px;
+    left: -10px;
+
+    transform: translateX(-100%) rotate(45deg);
+
+    background-color: #000;
+}
