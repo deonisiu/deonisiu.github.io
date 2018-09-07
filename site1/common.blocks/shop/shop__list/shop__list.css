@@ -1,0 +1,10 @@
+.shop__list {
+
+}
+
+.shop__list li {
+    position: relative;
+
+    padding-left: 44px;
+    margin-bottom: 12px;
+}

@@ -1,0 +1,8 @@
+.item__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__wrapper * {
+    margin-top: 0;
+}

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Document</title>
+    <title>Карточка товара</title>
 </head>
 <body class="inner">
     <header class="header inner__header">
@@ -19,8 +19,8 @@
                 <li><a class="header__link inner__logo" href="index.html"><img src="img/logo.svg" width="112" height="24" alt="Логотип Barbershop"></a></li>
                 <li><a class="header__link" href="">Информация</a></li>
                 <li><a class="header__link" href="">Новости</a></li>
-                <li><a class="header__link header__link--current" href="">Прайс-лист</a></li>
-                <li><a class="header__link" href="shop.html">Магазин</a></li>
+                <li><a class="header__link" href="price.html">Прайс-лист</a></li>
+                <li><a class="header__link header__link--current" href="shop.html">Магазин</a></li>
                 <li><a class="header__link" href="">Контакты</a></li>
             </ul>
             <ul class="list nav">
@@ -30,57 +30,49 @@
         </nav>
     </header>
     <main class="main-container">
-
         <div class="inner__title-container">
-            <h1 class="page-title">Прайс-лист</h1>
+            <h1 class="page-title">Набор для путешествий "Baxter of California"</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__link"><a href="index.html">Главная</a></li>
-                <li class="breadcrumbs--current">Прайс-лист</li>
+                <li class="breadcrumbs__link"><a href="shop.html">Магазин</a></li>
+                <li class="breadcrumbs__link"><a href="shop.html">Средства для ухода</a></li>
+                <li class="breadcrumbs--current">Набор для путешествий "Baxter of California"</li>
             </ul>
         </div>
 
-        <section class="inner__content">
-            <h2 class="inner__big-title">Истинно мужская классика</h2>
+        <div class="inner__columns">
+            <div class="item__gallery">
+                <img width="460" height="498" src="img/jpg/item__main-image.jpg" alt="Основная картинка товара">
 
-            <div class="inner__columns">
-                <div>
-                    <h2>Мы используем только<br> лучшие средства:</h2>
-                    <ul class="inner__list">
-                        <li>Baxter of California</li>
-                        <li>Mr Natty</li>
-                        <li>Suavecito</li>
-                        <li>Malin+Goetz</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Цены на услуги<br> наших мастеров</h2>
-                    <table class="inner__table">
-                        <tr>
-                            <td>Стрижка</td>
-                            <td>1500 Р</td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка бороды</td>
-                            <td>500 Р</td>
-                        </tr>
-                        <tr>
-                            <td>Накрутка усов</td>
-                            <td>350 Р</td>
-                        </tr>
-                    </table>
+                <div class="item__wrapper">
+                    <img width="140" height="149" src="img/jpg/item__small-image1.jpg" alt="Mini img 1">
+                    <img width="140" height="149" src="img/jpg/item__small-image2.jpg" alt="Mini img 2">
+                    <img width="140" height="149" src="img/jpg/item__small-image3.jpg" alt="Mini img 3">
                 </div>
             </div>
 
-            <div class="inner__columns">
-                <h2>Несколько слов о нас:</h2>
-                <div>
-                    <p class="text--short">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            <div class="inner__content item__description">
+                <div class="item__wrapper">
+                    <p>Есть в наличии</p>
+                    <p class="item__article">Артикул: dexter-ae</p>
                 </div>
-                <div>
-                    <p class="text--short">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+                <div class="item__price">
+                    <span>2 900 Р</span>
+                    <a href="" class="button button-a">Купить</a>
                 </div>
+                
+                <h2>В набор входят:</h2>
+                <ul class="inner__list item__list">
+                    <li>Средство для умывания (50 мл)</li>
+                    <li>Увлажняющий крем (50 мл)</li>
+                    <li>Крем для бритья (50 мл)</li>
+                    <li>Крем после бритья, шампунь (50 мл)</li>
+                    <li>Удобная кожаная косметичка</li>
+                </ul>
             </div>
-        </section>
+
+        </div>
 
     </main>
 
@@ -146,5 +138,6 @@
     <script src="common.blocks/modal/modal__close/modal-close.js"></script>
     <script src="common.blocks/modal/modal-login/modal-login.js"></script>
     <script src="common.blocks/modal/modal-login/modal-login--error.js"></script>
+
 </body>
 </html>

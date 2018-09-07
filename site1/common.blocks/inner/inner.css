@@ -8,6 +8,7 @@
 @import "inner__table/inner__table.css";
 @import "inner__footer/inner__footer.css";
 @import "inner__columns/inner__columns.css";
+@import "inner__title-container/inner__title-container.css";
 
 .inner {
 

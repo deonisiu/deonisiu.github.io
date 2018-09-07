@@ -1,0 +1,12 @@
+.shop__wrapper {
+    display: flex;
+}
+
+.shop__wrapper > :first-child {
+    min-width: 220px;
+    margin-right: 20px;
+}
+
+.shop__wrapper > :last-child {
+    flex-grow: 1;
+}

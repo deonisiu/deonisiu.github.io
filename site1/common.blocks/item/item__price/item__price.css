@@ -1,0 +1,18 @@
+.item__price {
+    display: flex;
+}
+
+.item__price :first-child {
+    text-align: center;
+    box-sizing: border-box;
+
+    min-width: 110px;
+    min-height: 44px;
+    padding-top: 10px;
+
+    background-color: #d0d0d0;
+}
+
+.item__price :last-child {
+    min-width: 78px;
+}

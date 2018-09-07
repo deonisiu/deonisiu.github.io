@@ -1,0 +1,30 @@
+.form__radio-indicator {
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+input[type="radio"]:focus + .form__radio-indicator {
+    outline: thin dotted;
+    outline: 2px auto -webkit-focus-ring-color;
+}
+
+input[type="radio"]:checked + .form__radio-indicator::before {
+    width: 4px;
+    height: 4px;
+
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+}

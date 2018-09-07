@@ -15,8 +15,12 @@
 @import "common.blocks/footer/footer.css";
 @import "common.blocks/social/social.css";
 @import "common.blocks/modal/modal-common.css";
+
 @import "common.blocks/inner/inner.css";
 @import "common.blocks/breadcrumbs/breadcrumbs.css";
+@import "common.blocks/item/item.css";
+@import "common.blocks/shop/shop.css";
+@import "common.blocks/pagination/pagination.css";
 
 @import "common.blocks/js-code/js-code.css";
 @import "common.blocks/working/working.css";
