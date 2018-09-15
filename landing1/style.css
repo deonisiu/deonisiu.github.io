@@ -37,6 +37,8 @@ body {
 }
 
 .description__text {
+    max-width: 530px;
+
     margin-bottom: 47px;
 }
 
