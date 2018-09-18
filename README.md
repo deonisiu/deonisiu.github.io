@@ -1,9 +1,13 @@
 # Верстка
 
+---
 ## Landing page
 
-* [Екатерина Арагонская(simple)](/landing1) - ([preview](https://deonisiu.github.io/landing1))
+### Simple
 
-## Простые сайты
+* [Екатерина Арагонская](/landing1) - ([preview](https://deonisiu.github.io/landing1))
+
+---
+## Обычные сайты
 
 * [Barbershop](/site1) - ([preview](https://deonisiu.github.io/site1))
