@@ -1,0 +1,11 @@
+@import "registration__title.css";
+@import "registration__text.css";
+@import "registration__button.css";
+@import "registration__wrapper.css";
+
+.registration {
+    padding-top: 58px;
+
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+.image-wrapper__gorgeous {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-wrapper__gorgeous::after,
+.image-wrapper__gorgeous::before {
+    content: "";
+
+    width: 24px;
+    height: 2px;
+
+    margin: 10px;
+
+    background-color: #766357;
+}

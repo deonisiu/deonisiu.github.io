@@ -1,0 +1,10 @@
+@import "image-wrapper__gorgeous.css";
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper > :first-child {
+    margin-bottom: 14px;
+}

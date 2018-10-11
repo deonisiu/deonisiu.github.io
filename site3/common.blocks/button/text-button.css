@@ -1,0 +1,24 @@
+.text-button {
+  /* Позиционирование: position, top-left, z-index */
+  /* Блочная модель: display, float, width, height, margin, padding, box-sizing */
+  /* Типографика: font, line-height, text-align, color */
+
+  text-decoration: none;
+  color: #000000;
+
+  /* Оформление: background-color, border, border-radius, opacity */
+  /* Анимация: transform, transition */
+  /* Разное: will-change */
+}
+
+.text-button:hover {
+  color: #81b3d2;
+}
+
+.text-button:active {
+  color: #dbdbdb;
+}
+
+.text-button--current {
+  color: #766357;
+}

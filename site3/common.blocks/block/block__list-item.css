@@ -1,0 +1,20 @@
+.block__list-item {
+    width: 33.3%;
+    box-sizing: border-box;
+
+    padding: 60px 40px 0;
+
+    text-align: center;
+}
+
+.block__list-item svg {
+    min-height: 76px;
+}
+
+.block__list-item * {
+    text-transform: uppercase;
+}
+
+.block__list-item p {
+    margin-bottom: 88px;
+}

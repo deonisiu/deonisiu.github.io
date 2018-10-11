@@ -1,0 +1,9 @@
+@import "modal-record.css";
+
+.modal {
+  display: none;
+}
+
+.modal--show {
+  display: block;
+}

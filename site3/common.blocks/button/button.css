@@ -1,0 +1,12 @@
+@import "button--blue.css";
+@import "button--brown.css";
+@import "text-button.css";
+
+.button {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.button:active span{
+    opacity: 0.3;
+}

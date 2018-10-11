@@ -1,0 +1,12 @@
+.button--brown {
+    background-color: #766357;
+}
+
+.button--brown:hover {
+    background-color: #604e43;
+}
+
+.button--brown:active {
+    background-color: #503e33;
+  color: #857871;
+}

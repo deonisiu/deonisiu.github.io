@@ -1,0 +1,14 @@
+@import "footer__hash-tag.css";
+@import "footer__social-item.css";
+@import "footer__social-list.css";
+@import "footer__copyright.css";
+
+.footer {
+  margin: 0 auto;
+  min-width: 768px;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

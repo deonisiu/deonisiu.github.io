@@ -1,0 +1,29 @@
+.index-title__wrapper {
+    position: relative;
+
+    background-image: url(../../img/index-image.jpg);
+    background-position: 0% 34%;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-title__wrapper > * {
+    margin-top: 56px;
+}
+
+.index-title__wrapper > :nth-child(2) {
+    margin-top: 0;
+}
+
+.index-title__wrapper img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

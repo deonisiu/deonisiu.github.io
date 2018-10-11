@@ -1,0 +1,22 @@
+.footer__copyright {
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+.footer__copyright svg {
+    width: 114px;
+    height: 42px;
+    display: inline-block;
+
+    margin-left: 10px;
+}
+
+.copyright-link:hover path {
+  fill: #98c1da;
+}
+
+.copyright-link:active path {
+  fill: #c9c8c8;
+}

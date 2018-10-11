@@ -1,0 +1,16 @@
+.button--blue {
+    background-color: #81b3d2;
+}
+
+.button--blue:hover {
+    background-color: #669ec0;
+}
+
+.button--blue:active {
+    background-color: #5496bd;
+  color: #81b2ce;
+}
+
+.button--blue:active path {
+  fill: #88b6d1;
+}

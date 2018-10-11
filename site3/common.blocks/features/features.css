@@ -1,0 +1,9 @@
+@import "features__block/features__block.css";
+@import "features__title.css";
+@import "features__text.css";
+@import "features__wrapper.css";
+@import "features__white-bord.css";
+
+.features {
+    width: 100%;
+}

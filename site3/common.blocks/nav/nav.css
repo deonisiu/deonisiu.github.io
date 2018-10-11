@@ -1,0 +1,15 @@
+@import "nav__list.css";
+@import "nav__link.css";
+@import "nav__list--left.css";
+@import "nav__list--right.css";
+
+.nav {
+    position: absolute;
+
+    width: 100%;
+    min-height: 56px;
+  padding: 0 6%;
+  box-sizing: border-box;
+
+    background-color: #fff;
+}

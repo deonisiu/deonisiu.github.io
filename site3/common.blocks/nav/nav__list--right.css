@@ -1,0 +1,16 @@
+.nav__list--right {
+    float: right;
+  padding: 0;
+
+  justify-content: flex-end;
+}
+
+.nav__list--right li {
+  padding-left: 50px;
+}
+
+.nav__list--right > :first-child {
+  flex-grow: 1;
+  text-align: center;
+  padding-right: 10px;
+}

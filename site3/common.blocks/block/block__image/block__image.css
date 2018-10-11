@@ -1,0 +1,10 @@
+@import "block__image1.css";
+@import "block__image2.css";
+
+.block__image1,
+.block__image2 {
+    flex-grow: 1;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}

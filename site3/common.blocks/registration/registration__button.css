@@ -1,0 +1,10 @@
+.registration__button {
+  position: relative;
+  border: none;
+
+  width: 568px;
+
+  font: bold 22px "PT Sans";
+
+  padding: 1em 0;
+}

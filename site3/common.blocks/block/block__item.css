@@ -1,0 +1,30 @@
+.block__item {
+    width: 33.3%;
+    min-height: 256px;
+
+    padding: 46px 40px 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #81b3d2;
+
+    box-sizing: border-box;
+}
+
+.block__item-title {
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.block__item p {
+    font-size: 14px;
+
+    margin-top: 0;
+    margin-bottom: 32px;
+}

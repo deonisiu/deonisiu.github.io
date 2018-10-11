@@ -1,0 +1,12 @@
+@import "map__image/map__image.css";
+
+.map {
+    background-color: #f2f2f2;
+
+  min-height: 470px;
+  background-image: url("../../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}

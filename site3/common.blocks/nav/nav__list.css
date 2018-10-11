@@ -1,0 +1,46 @@
+.nav__list {
+    list-style-type: none;
+
+    display: flex;
+    /*justify-content: space-between;*/
+
+    width: 46%;
+
+    margin: 21px 0;
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list2 {
+  list-style-type: none;
+
+  display: flex;
+  flex-grow: 1;
+
+  margin: 21px 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.nav__list2--right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.nav__item2 {
+  width: 40%;
+}

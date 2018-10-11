@@ -1,0 +1,382 @@
+.hostels-filter {
+  /* Позиционирование: position, top-left, z-index */
+  /* Блочная модель: display, float, width, height, margin, padding, box-sizing */
+
+  min-height: 216px;
+  padding-top: 32px;
+
+  /* Типографика: font, line-height, text-align, color */
+  /* Оформление: background-color, border, border-radius, opacity */
+
+  background-image: url("../../img/background-blur.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  /* Анимация: transform, transition */
+  /* Разное: will-change */
+}
+
+.hostels-form {
+  /* Позиционирование: position, top-left, z-index */
+  /* Блочная модель: display, float, width, height, margin, padding, box-sizing */
+
+  display: flex;
+  justify-content: space-between;
+
+  /* Типографика: font, line-height, text-align, color */
+
+  text-transform: uppercase;
+  color: #ffffff;
+
+  /* Оформление: background-color, border, border-radius, opacity */
+  /* Анимация: transform, transition */
+  /* Разное: will-change */
+}
+
+.hostels-form__fieldset {
+  /* Позиционирование: position, top-left, z-index */
+  /* Блочная модель: display, float, width, height, margin, padding, box-sizing */
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 22px;
+  margin: 0;
+
+  /* Типографика: font, line-height, text-align, color */
+  /* Оформление: background-color, border, border-radius, opacity */
+
+  border: 0;
+
+  /* Анимация: transform, transition */
+  /* Разное: will-change */
+}
+
+.hostels-form legend {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.form-wrapper > :first-child {
+  min-width: 240px;
+}
+
+.hostels-form__fieldset label {
+  margin-bottom: 20px;
+}
+
+.hostels-form__fieldset label:hover {
+  color: #81b2ce;
+}
+
+.hostels-form__fieldset span {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 27px;
+  min-height: 23px;
+  margin-right: 10px;
+  background-image: url("../../svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked + span{
+  background-image: url("../../svg/checkbox-on.svg");
+}
+
+.price {
+  min-width: 220px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  text-align: center;
+}
+
+.price > * {
+  margin-bottom: 1em;
+}
+
+.price-range {
+  /* Позиционирование: position, top-left, z-index */
+
+  position: relative;
+
+  /* Блочная модель: display, float, width, height, margin, padding, box-sizing */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 32px;
+
+  /* Типографика: font, line-height, text-align, color */
+  /* Оформление: background-color, border, border-radius, opacity */
+
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+
+  /* Анимация: transform, transition */
+  /* Разное: will-change */
+}
+
+.price-range::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 3px;
+  height: 24px;
+
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+}
+
+.price-line,
+.fill-line {
+  background-color: #ffffff;
+  height: 3px;
+}
+
+.price-line {
+  background-color: grey;
+
+  margin-bottom: 34px;
+}
+
+.fill-line {
+  position: relative;
+  width: 80%;
+  opacity: 1.3;
+}
+
+.fill-line::before,
+.fill-line::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+
+  transform: translate(0%, -40%);
+
+  cursor: pointer;
+}
+
+.fill-line::after {
+  right: 0;
+}
+
+.fill-line::before {
+  left: 0;
+}
+
+.hostels-form__button {
+  min-width: 134px;
+  min-height: 32px;
+
+  font: inherit;
+  text-transform: uppercase;
+
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+
+  color: #ffffff;
+
+  background-color: transparent;
+}
+
+.hostels-form__button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hostels-sort {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-result {
+  margin-right: 50px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.sort-type {
+  min-width: 238px;
+
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 40px;
+  padding: 0;
+}
+
+.sort-type__link {
+  text-decoration-style: dashed;
+  text-decoration-color: #81b3d2;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-type__link:hover {
+  color: #81b3d2;
+  opacity: 1;
+}
+
+.sort-type__link:active {
+  color: #000000;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.sort-type--current {
+  text-decoration: none;
+  opacity: 1;
+  color: #81b3d2;
+}
+
+.sort-up-down {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.sort-up-down > :first-child {
+  margin-right: 12px;
+}
+
+.sort-up-down path{
+  fill: #cacaca;
+}
+
+.sort-up-down a:hover path{
+  fill: #000000;
+}
+
+.sort-up-down a:active path{
+  fill: #81b3d2;
+}
+
+.sort-up-down--active path{
+  fill: #81b3d2;
+}
+
+.hostels-list {
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.hostels-list > * {
+  max-height: 90px;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.hostels-list img {
+  margin-right: 30px;
+}
+
+.hostel-description {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.hostel-description * {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.hostel-description p {
+  margin-bottom: 9px;
+}
+
+.hostel-title {
+  text-decoration: none;
+  color: #000000;
+
+  font-size: 21px;
+  line-height: 16px;
+}
+
+.hostel-title:hover {
+  color: #81b3d2;
+}
+
+.hostel-title:active {
+  color: #cacaca;
+}
+
+.desc-wrapper {
+  display: flex;
+}
+
+.hostel-button {
+  padding: 5px 16px;
+  margin-right: 10px;
+  text-decoration: none;
+
+  line-height: 28px;
+
+  font-weight: bold;
+}
+
+.hostel-rating {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hostel-rating ul {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+
+  display: flex;
+}
+
+.hostel-rating li {
+  margin-left: 5px;
+}
+
+.rating-button:disabled {
+  min-width: 110px;
+  min-height: 28px;
+
+  border: 0;
+  background-color: #f2f2f2;
+  color: #000000;
+}

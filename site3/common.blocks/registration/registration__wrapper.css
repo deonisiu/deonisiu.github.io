@@ -1,0 +1,15 @@
+.registration__wrapper {
+  /* Позиционирование: position, top-left, z-index */
+
+  position: relative;
+
+  /* Блочная модель: display, float, width, height, margin, padding, box-sizing */
+
+  max-width: 568px;
+  margin: 0 auto;
+
+  /* Типографика: font, line-height, text-align, color */
+  /* Оформление: background-color, border, border-radius, opacity */
+  /* Анимация: transform, transition */
+  /* Разное: will-change */
+}
