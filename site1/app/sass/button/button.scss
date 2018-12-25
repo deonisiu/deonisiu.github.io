@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  width: 140px;
+  padding: 8px 18px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  
+  &:hover, &:active, &:focus {
+    background-color: #663d15;
+  }
+  
+  &--white {
+    &:hover, &:active, &:focus {
+      color: #000000;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Positioning: position, top-left, z-index */
+// ---------- */
+// Block model: display, float */
+// ---------- */
+// Size: width, height, margin, padding, box-sizing */
+// ---------- */
+// Typography: font, line-height, text-align, color */
+// ---------- */
+// Design: background-color, border(radius), opacity */
+// ---------- */
+// Animation: transform, transition */
+// ---------- */
+// Other: will-change */

@@ -1,0 +1,44 @@
+.footer {
+  margin: 64px auto 0;
+  padding: 62px 0 44px;
+  color: #ffffff;
+  background-image: url("../img/jpg/footer-fill.jpg");
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer__social, .footer__copyright {
+  text-align: center;
+
+  &> :first-child {
+    margin-bottom: 14px;
+  }
+}
+
+.footer__social {
+  margin-right: 100px;
+}
+
+// Positioning: position, top-left, z-index */
+// ---------- */
+// Block model: display, float */
+// ---------- */
+// Size: width, height, margin, padding, box-sizing */
+// ---------- */
+// Typography: font, line-height, text-align, color */
+// ---------- */
+// Design: background-color, border(radius), opacity */
+// ---------- */
+// Animation: transform, transition */
+// ---------- */
+// Other: will-change */

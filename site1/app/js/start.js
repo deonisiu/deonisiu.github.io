@@ -1,0 +1,4 @@
+/**
+ * Start scripts
+ */
+'use strict';

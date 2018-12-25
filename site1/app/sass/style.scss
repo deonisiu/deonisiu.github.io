@@ -1,0 +1,35 @@
+body, ul, button, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body, button {
+  font: 700 14px/24px "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2, h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+@import "body/body";
+@import "text/text";
+@import "button/button";
+@import "form/form";
+@import "header/header";
+@import "features/features";
+@import "news/news";
+@import "gallery/gallery";
+@import "contacts/contacts";
+@import "sign-up/sign-up";
+@import "footer/footer";
+@import "social/social";
+
+@import "modal/modal";
+@import "modal/modal-login";
+@import "modal/modal-map";

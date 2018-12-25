@@ -1,0 +1,15 @@
+.features__title {
+  position: relative;
+  margin-bottom: 70px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: translate(-50%, 10px) rotate(45deg);
+  }
+}

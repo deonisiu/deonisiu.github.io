@@ -1,0 +1,15 @@
+.contacts {
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  .button-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 100px;
+
+    :first-child {
+      margin-right: 20px;
+    }
+  }
+}

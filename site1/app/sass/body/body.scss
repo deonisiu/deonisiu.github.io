@@ -1,0 +1,53 @@
+.body {
+  background: url("../img/jpg/index-background.jpg") top center no-repeat;
+}
+
+.main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  padding: 55px 80px 0;
+  background-image: url("../img/jpg/fill.jpg");
+
+  h2 {
+    margin-bottom: 28px;
+  }
+
+  :first-child {
+    max-width: 348px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 8px;
+    height: 278px;
+    background-image: url("../img/png/section-line.png");
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

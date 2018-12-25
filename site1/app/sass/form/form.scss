@@ -1,0 +1,37 @@
+.form {
+
+}
+
+.form__field {
+  width: 140px;
+  margin-top: 4px;
+  padding: 10px 16px;
+  border: 2px solid #000101;
+  background-color: #f9f6f3;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font: 700 14px/24px "PT Sans Narrow", sans-serif;
+    color: #000000;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #663d15;
+  }
+}
+
+// Positioning: position, top-left, z-index */
+// ---------- */
+// Block model: display, float */
+// ---------- */
+// Size: width, height, margin, padding, box-sizing */
+// ---------- */
+// Typography: font, line-height, text-align, color */
+// ---------- */
+// Design: background-color, border(radius), opacity */
+// ---------- */
+// Animation: transform, transition */
+// ---------- */
+// Other: will-change */

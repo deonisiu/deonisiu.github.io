@@ -1,0 +1,50 @@
+.header__button {
+  display: block;
+  width: auto;
+  padding: 29px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
+  
+  &:hover, &:active, &:focus {
+    background-color: lighten(black, 10%);
+  }
+
+  &--login {
+    padding-left: 52px;
+    padding-right: 24px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      left: 24px;
+      width: 15px;
+      height: 15px;
+      background: url("../img/svg/login.svg") 0 0 no-repeat;
+      transform: translate(0, 16%);
+      opacity: 0.3;
+    }
+
+    &:hover, &:active {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Positioning: position, top-left, z-index */
+// ---------- */
+// Block model: display, float */
+// ---------- */
+// Size: width, height, margin, padding, box-sizing */
+// ---------- */
+// Typography: font, line-height, text-align, color */
+// ---------- */
+// Design: background-color, border(radius), opacity */
+// ---------- */
+// Animation: transform, transition */
+// ---------- */
+// Other: will-change */
