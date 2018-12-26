@@ -1,0 +1,31 @@
+.breadcrumbs {
+  margin-top: 34px;
+  margin-bottom: 56px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+
+  &> :last-child {
+    color: #aba9a7;
+
+    &::after {
+      position: static;
+    }
+  }
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 40px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: -20px;
+    background-color: #000000;
+    transform: translate(50%, 100%) rotate(45deg);
+  }
+}

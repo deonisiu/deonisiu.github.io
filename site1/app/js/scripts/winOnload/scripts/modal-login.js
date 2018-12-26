@@ -13,6 +13,7 @@
     loginBtn.addEventListener("click", function (event) {
         event.preventDefault();
         modalLogin.classList.add("modal--show");
+        login.focus();
     });
 
     modalLoginClose.addEventListener("click", function (event) {

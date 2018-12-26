@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Barbershop</title>
 </head>
-<body class="body">
-  <header class="header">
+<body class="body body--index">
+  <header class="header header--index">
     <nav class="header__nav">
       <img src="img/svg/index-logo.svg" alt="main-logo" class="header__logo header__logo--main">
       <div class="nav-wrapper">
@@ -18,7 +18,7 @@
           <li><a href="#" class="header__button button">Информация</a></li>
           <li><a href="#" class="header__button button">Новости</a></li>
           <li><a href="#" class="header__button button">Прайс-лист</a></li>
-          <li><a href="#" class="header__button button">Магазин</a></li>
+          <li><a href="shop.html" class="header__button button">Магазин</a></li>
           <li><a href="#" class="header__button button">Контакты</a></li>
         </ul>
         <!-- /.header__menu -->
@@ -231,8 +231,8 @@
 
       <div class="wrapper">
         <label>
-          <input type="checkbox" class="modal-login__checkbox visually-hidden">
-          <span class="modal-login__custom-checkbox"></span>
+          <input type="checkbox" class="checkbox modal-login__checkbox visually-hidden">
+          <span></span>
           Запомните меня
         </label>
         <a href="#" class="modal-login__recovery">
@@ -248,6 +248,7 @@
   <!-- /.modal-login modal -->
 
   <section class="modal-map modal">
+    <h2 class="visually-hidden">Как к нам проехать</h2>
     <img src="img/jpg/map.jpg" alt="map" class="modal-map__image">
     <button class="modal-close"></button>
   </section>

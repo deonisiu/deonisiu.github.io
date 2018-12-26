@@ -8,6 +8,11 @@ body, button {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 ul {
   list-style-type: none;
 }
@@ -18,6 +23,10 @@ h2, h3 {
 }
 
 .body {
+  background-image: url("../img/jpg/fill.jpg");
+}
+
+.body--index {
   background: url("../img/jpg/index-background.jpg") top center no-repeat;
 }
 
@@ -72,6 +81,10 @@ input[type="radio"].visually-hidden {
   color: red;
 }
 
+.text--lower {
+  text-transform: none;
+}
+
 .button {
   display: inline-block;
   width: 140px;
@@ -93,6 +106,12 @@ input[type="radio"].visually-hidden {
 .button--white:hover, .button--white:active, .button--white:focus {
   color: #000000;
   background-color: #ffffff;
+}
+
+.button--pagination {
+  width: 42px;
+  margin-right: 6px;
+  box-sizing: border-box;
 }
 
 .button-wrapper {
@@ -120,9 +139,103 @@ input[type="radio"].visually-hidden {
   border-color: #663d15;
 }
 
-.header {
-  margin-bottom: 294px;
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.form__fieldset label {
+  margin-bottom: 16px;
+}
+
+.form__legend {
+  padding: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.form__button {
+  width: 112px;
+}
+
+.checkbox + span {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 23px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  transform: translateY(-2px);
+}
+
+.checkbox:focus + span {
+  outline: 2px solid #6495ED;
+}
+
+.checkbox:checked + span::before, .checkbox:checked + span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 12px;
   background-color: #000000;
+}
+
+.checkbox:checked + span::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.checkbox:checked + span::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.radio + span {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 23px;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translateY(-2px);
+}
+
+.radio:focus + span {
+  outline: 2px solid #6495ED;
+}
+
+.radio:checked + span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.radio:checked + span::before {
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  margin-bottom: 60px;
+  background-color: #000000;
+}
+
+.header--index {
+  margin-bottom: 294px;
 }
 
 .header__nav {
@@ -148,10 +261,29 @@ input[type="radio"].visually-hidden {
 .header__button {
   display: block;
   width: auto;
-  padding: 29px 20px;
+  max-height: 72px;
+  padding: 26px 20px;
   font-size: 16px;
   line-height: 20px;
   box-sizing: border-box;
+}
+
+.header__button--logo {
+  padding: 24px 20px;
+}
+
+.header__button--current {
+  position: relative;
+}
+
+.header__button--current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 5px;
+  background-color: #ffffff;
 }
 
 .header__button:hover, .header__button:active, .header__button:focus {
@@ -388,6 +520,8 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
   box-sizing: border-box;
   transform: translateX(-50%);
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .modal-login > :first-child {
@@ -417,38 +551,8 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-.modal-login__custom-checkbox {
-  position: relative;
-  vertical-align: middle;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+.modal-login__checkbox + span {
   margin-right: 5px;
-  border: 2px solid black;
-  box-sizing: border-box;
-  transform: translateY(-2px);
-}
-
-.modal-login__checkbox:focus + .modal-login__custom-checkbox {
-  outline: 2px solid #6495ED;
-}
-
-.modal-login__checkbox:checked + .modal-login__custom-checkbox::before, .modal-login__checkbox:checked + .modal-login__custom-checkbox::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 12px;
-  background-color: #000000;
-}
-
-.modal-login__checkbox:checked + .modal-login__custom-checkbox::before {
-  transform: translate(-58%, -50%) rotate(-45deg);
-}
-
-.modal-login__checkbox:checked + .modal-login__custom-checkbox::after {
-  transform: translate(-58%, -50%) rotate(45deg);
 }
 
 .modal-map {
@@ -462,4 +566,104 @@ input[type="radio"].visually-hidden {
   background-color: white;
   border: 5px solid white;
   box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+  70% {
+    transform: translate(-50%, 30px);
+  }
+  90% {
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
+
+.breadcrumbs {
+  margin-top: 34px;
+  margin-bottom: 56px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__list > :last-child {
+  color: #aba9a7;
+}
+
+.breadcrumbs__list > :last-child::after {
+  position: static;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 40px;
+}
+
+.breadcrumbs__item::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: -20px;
+  background-color: #000000;
+  transform: translate(50%, 100%) rotate(45deg);
+}
+
+.shop {
+  display: flex;
+}
+
+.shop__search {
+  width: 200px;
+  margin-right: 40px;
+}
+
+.shop__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+}
+
+.card {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card__wrapper {
+  padding-left: 16px;
+}
+
+.card__price {
+  display: flex;
+  margin: 16px;
+  margin-left: 0;
+}
+
+.card__price button {
+  width: 78px;
+}
+
+.price {
+  width: 108px;
+  padding: 11px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.pagination {
+  display: flex;
 }

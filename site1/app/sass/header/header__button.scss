@@ -1,10 +1,28 @@
 .header__button {
   display: block;
   width: auto;
-  padding: 29px 20px;
+  max-height: 72px;
+  padding: 26px 20px;
   font-size: 16px;
   line-height: 20px;
   box-sizing: border-box;
+
+  &--logo {
+    padding: 24px 20px;
+  }
+
+  &--current {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      height: 5px;
+      background-color: #ffffff;
+    }
+  }
   
   &:hover, &:active, &:focus {
     background-color: lighten(black, 10%);

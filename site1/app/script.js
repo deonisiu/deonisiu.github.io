@@ -28,6 +28,7 @@ window.onload = function () {
     loginBtn.addEventListener("click", function (event) {
         event.preventDefault();
         modalLogin.classList.add("modal--show");
+        login.focus();
     });
 
     modalLoginClose.addEventListener("click", function (event) {
@@ -56,15 +57,17 @@ window.onload = function () {
     var modalMapClose = modalMap.querySelector(".modal-close");
     var modalMapBtn = document.querySelector(".contacts__button");
 
-    modalMapBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        modalMap.classList.add("modal--show");
-    });
+    if(modalMapBtn) {
+        modalMapBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            modalMap.classList.add("modal--show");
+        });
 
-    modalMapClose.addEventListener("click", function (event) {
-        event.preventDefault();
-        modalMap.classList.remove("modal--show");
-    });
+        modalMapClose.addEventListener("click", function (event) {
+            event.preventDefault();
+            modalMap.classList.remove("modal--show");
+        });
+    }
 };
 /**
  * End scripts

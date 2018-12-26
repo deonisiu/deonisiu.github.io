@@ -22,6 +22,32 @@
   }
 }
 
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+
+  & label {
+    margin-bottom: 16px;
+  }
+}
+
+.form__legend {
+  padding: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.form__button {
+  width: 112px;
+}
+
+@import "checkbox";
+@import "radio";
+
 // Positioning: position, top-left, z-index */
 // ---------- */
 // Block model: display, float */
