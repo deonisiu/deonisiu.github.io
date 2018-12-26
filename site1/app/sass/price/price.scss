@@ -1,0 +1,16 @@
+.price {
+  display: flex;
+  margin: 16px;
+  margin-left: 0;
+
+  & button {
+    width: 78px;
+  }
+}
+
+.price__text {
+  width: 108px;
+  padding: 11px;
+  text-align: center;
+  background-color: lightgray;
+}

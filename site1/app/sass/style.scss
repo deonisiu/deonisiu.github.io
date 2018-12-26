@@ -22,6 +22,11 @@ h2, h3 {
   line-height: 42px;
 }
 
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 @import "body/body";
 @import "text/text";
 @import "button/button";
@@ -43,5 +48,9 @@ h2, h3 {
 
 @import "breadcrumbs/breadcrumbs";
 @import "shop/shop";
+@import "price/price";
 @import "card/card";
 @import "pagination/pagination";
+@import "item/item";
+
+@import "hint/hint";

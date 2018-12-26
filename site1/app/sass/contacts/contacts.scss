@@ -8,7 +8,7 @@
     justify-content: flex-start;
     margin-bottom: 100px;
 
-    :first-child {
+    >:first-child {
       margin-right: 20px;
     }
   }

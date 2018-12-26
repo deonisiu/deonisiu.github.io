@@ -1,0 +1,35 @@
+.hint {
+  position: relative;
+  top: -98%;
+  left: 96%;
+  width: 1px;
+  height: 1px;
+
+  &::after {
+    position: absolute;
+    content: 'click';
+    top: 2%;
+    right: 4%;
+    color: red;
+  }
+
+  &--down {
+    bottom: -98%;
+  }
+
+  &-btn {
+    position: relative;
+    left: 28%;
+    width: 1px;
+    height: 1px;
+    margin-right: 0;
+
+    &::after {
+      position: absolute;
+      content: 'click';
+      top: 60%;
+      right: 4%;
+      color: red;
+    }
+  }
+}

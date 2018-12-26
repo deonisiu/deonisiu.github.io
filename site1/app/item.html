@@ -1,28 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barbershop item</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>Barbershop</title>
 </head>
-<body class="body body--index">
-  <header class="header header--index">
+<body class="body">
+  <header class="header">
     <nav class="header__nav">
-      <img src="img/svg/index-logo.svg" alt="main-logo" class="header__logo header__logo--main">
+
       <div class="nav-wrapper">
         <ul class="header__menu">
+          <li><a href="index.html" class="header__button header__button--logo"><img src="img/svg/logo.svg" alt="logo" class="header__logo"></a></li>
           <li><a href="#" class="header__button button">Информация</a></li>
           <li><a href="#" class="header__button button">Новости</a></li>
           <li><a href="#" class="header__button button">Прайс-лист</a></li>
-          <li>
-            <a href="shop.html" class="header__button button">Магазин</a>
-            <div class="hint"></div>
-          </li>
-          <li><a href="#" class="header__button button">Контакты</a></li>
+          <li><a href="shop.html" class="header__button header__button--current button">Магазин</a></li>
+          <li><a href="#" class="header__button  button">Контакты</a></li>
         </ul>
         <!-- /.header__menu -->
 
@@ -32,147 +30,69 @@
         <!-- /.header__user-bar -->
       </div>
       <!-- /.nav-wrapper -->
-      </nav>
+    </nav>
     <!-- /.nav -->
   </header>
   <!-- /.header -->
 
   <main class="main">
-    <h1 class="visually-hidden">Barbershop Borodinski</h1>
-    
-    <section class="features">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      
-      <ul class="features__list">
-        <li>
-          <h3 class="features__title">Быстро</h3>
-          <p>
-            Мы делаем свою работу быстро!
-            Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
-          </p>
-        </li>
-        <li>
-          <h3 class="features__title">Круто</h3>
-          <p>
-            Забудьте, как вы стриглись раньше.
-            Мы сделаем из вас звезду футбола или кино!
-            Во всяком случае внешне.
-          </p>
-        </li>
-        <li>
-          <h3 class="features__title">Дорого</h3>
-          <p>
-            Наши мастера — профессионалы своего дела и не могут стоить дешево.
-            К тому же, разве цена не дает определеный статус?
-          </p>
-        </li>
+    <h1>набор для путешествий «Baxter of California»</h1>
+
+    <section class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#">Магазин</a></li>
+        <li class="breadcrumbs__item"><a href="#">Средства для ухода</a></li>
+        <li class="breadcrumbs__item text--color-gray">набор для путешествий «Baxter of California»</li>
       </ul>
-      <!-- /.features__list -->
+      <!-- /.breadcrumbs-list -->
     </section>
-    <!-- /.features -->
+    <!-- /.breadcrumbs -->
 
-    <div class="section-wrapper">
-      <section class="news">
-        <h2>Новости</h2>
-
-        <ul class="news__list">
-          <li class="news__item">
-            <p class="news__text">
-              Нам наконец завезли ягермайстер!
-              Теперь вы можете пропустить стаканчик во время стрижки
-            </p>
-            <time class="news__date" datetime="2018-01-18">18 января</time>
-          </li>
-          <li class="news__item">
-            <p class="news__text">
-              В нашей команде пополнение, борис «бритва» стригунец,
-              обладaтель множества титулов и наград пополнил наши стройные ряды
-            </p>
-            <time class="news__date" datetime="2018-01-25">25 января</time>
-          </li>
+    <div class="item">
+      <section class="item__gallery">
+        <img src="img/jpg/item_gallery.jpg" alt="main_img" class="item__gallery__main">
+        <ul class="item__gallery__list">
+          <li><img src="img/jpg/item_gallery.jpg" alt="small1"></li>
+          <li><img src="img/jpg/item_gallery.jpg" alt="small2"></li>
+          <li><img src="img/jpg/item_gallery.jpg" alt="small3"></li>
         </ul>
-        <!-- /.news__list -->
+        <!-- /.item__gallery__list -->
 
-        <a href="#" class="news__button button">Все новости</a>
       </section>
-      <!-- /.news -->
+      <!-- /.item__gallery -->
 
-      <section class="gallery">
-        <h2>Фотогалерея</h2>
-
-        <img class="gallery__image" src="img/jpg/main-gallery.jpg" alt="main-photo">
-
-        <div class="button-wrapper">
-          <button class="button">Назад</button>
-          <button class="button">Вперед</button>
+      <section class="item__description">
+        <div class="item__description-wrapper">
+          <p>Есть в наличии</p>
+          <p class="text--color-gray">Артикул: Dexter-ae</p>
         </div>
-        <!-- /.gallery-wrapper -->
-        </section>
-      <!-- /.gallery -->
-    </div>
-    <!-- /.section-wrapper -->
+        <!-- /.description-wrapper -->
 
-    <div class="section-wrapper">
-      <section class="contacts">
-        <h2>Контактная информация</h2>
+        <p>
+          Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+        </p>
 
-        <p>Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
-          Телефон: +7 (495) 666-02-66</p>
-
-        <p>Время работы:<br>
-          Пн—Пт: с 10:00 до 22:00<br>
-          Сб—Вс: с 10:00 до 19:00</p>
-
-        <div class="button-wrapper">
-          <button class="button contacts__button">
-            Как проехать
-            <span class="hint-btn"></span>
-          </button>
-          <button class="button">Обратная связь</button>
+        <div class="price">
+          <p class="price__text">2 900 Р</p>
+          <button class="button">Купить</button>
         </div>
-        <!-- /.button-wrapper -->
+        <!-- /.price -->
+
+        <h4>В набор входят:</h4>
+        <ul class="item__description-list">
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
+        <!-- /.description__list -->
+
       </section>
-      <!-- /.contacts -->
-
-      <section class="sign-up">
-        <h2>Записаться</h2>
-
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-
-        <form action="#" class="sign-up__form" method="post">
-          <div class="form-wrapper">
-            <label>
-              <span>Дата</span>
-              <input type="text" class="form__field" placeholder="08.02.2018">
-            </label>
-            <label>
-              <span>Время</span>
-              <input type="text" class="form__field" placeholder="10:00">
-            </label>
-          </div>
-          <!-- /.form-wrapper -->
-
-          <div class="form-wrapper">
-            <label>
-              <span>Ваше имя</span>
-              <input type="text" class="form__field" placeholder="Борода">
-            </label>
-            <label>
-              <span>Телефон</span>
-              <input type="text" class="form__field" placeholder="+7 123-456-78-90">
-            </label>
-          </div>
-          <!-- /.form-wrapper -->
-
-          <button class="sign-up__button button" type="submit">Отправить</button>
-        </form>
-        <!-- /.sign-up__form -->
-      </section>
-      <!-- /.sign-up -->
+      <!-- /.description -->
     </div>
-    <!-- /.section-wrapper -->
-
+    <!-- /.item -->
   </main>
   <!-- /.main -->
 
@@ -206,7 +126,7 @@
           <li><a href="#" class="social__button"><span class="visually-hidden">Инстаграм</span>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="social__img"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
-            </a>
+          </a>
           </li>
         </ul>
         <!-- /.social-list -->
@@ -224,7 +144,7 @@
   </footer>
   <!-- /.footer -->
 
-  <section class="modal-login modal modal--show">
+  <section class="modal-login modal">
     <h2>Личный кабинет</h2>
     <p>Введите пожалуйста свой логин и пароль</p>
     <form class="modal-login__form" action="#" method="post">
