@@ -4,6 +4,10 @@
 
 .body--index {
   background: url("../img/jpg/index-background.jpg") top center no-repeat;
+
+  h2, h3 {
+    @include textH1;
+  }
 }
 
 .main {

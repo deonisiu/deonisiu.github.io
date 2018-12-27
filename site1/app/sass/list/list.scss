@@ -1,0 +1,25 @@
+.list {
+  $left-padding: 20px;
+  padding-left: $left-padding;
+
+  & li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 9px;
+      left: -$left-padding;
+      width: 6px;
+      height: 6px;
+      background-color: #000000;
+      transform: translate(0, 0) rotate(45deg);
+    }
+  }
+
+  &--uncompressed {
+    & li {
+      margin-bottom: 12px;
+    }
+  }
+}

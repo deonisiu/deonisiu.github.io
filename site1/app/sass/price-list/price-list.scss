@@ -1,0 +1,25 @@
+.price-list {
+
+}
+
+.price-list__slogan {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  font-size: 48px;
+  line-height: 48px;
+
+  & b {
+    margin: auto 26px;
+  }
+
+  &::before, &::after {
+    content: '';
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #000000;
+  }
+}

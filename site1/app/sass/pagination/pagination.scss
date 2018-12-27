@@ -1,3 +1,19 @@
 .pagination {
   display: flex;
 }
+
+.pagination__button {
+  width: 42px;
+  margin-right: 6px;
+  box-sizing: border-box;
+  
+  &--current {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+    &:hover, &:focus {
+      background-color: #ffffff;
+    }
+  }
+}

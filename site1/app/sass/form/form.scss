@@ -1,5 +1,9 @@
 .form {
-
+  & label {
+    &:hover, &:focus {
+      color: #663d15;
+    }
+  }
 }
 
 .form__field {
