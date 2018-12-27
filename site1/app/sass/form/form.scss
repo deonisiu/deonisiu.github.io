@@ -1,5 +1,6 @@
 .form {
   & label {
+
     &:hover, &:focus {
       color: #663d15;
     }
@@ -32,8 +33,10 @@
   padding: 0;
   margin-bottom: 20px;
   border: none;
+}
 
-  & label {
+.form__list {
+  & li {
     margin-bottom: 16px;
   }
 }
