@@ -36,7 +36,7 @@ gulp.task('stream', ['browser-sync'], function () {
 gulp.task('concat-js', function () {
     return gulp.src(['app/js/start.js', 'app/js/scripts/**/*.js', 'app/js/end.js'])
         .pipe(concat('script.js'))
-        .pipe(gulp.dest('app/'));
+        .pipe(gulp.dest('app/js'));
 });
 
 gulp.task('sass', function () {
@@ -62,11 +62,32 @@ gulp.task('browser-sync', function () {
     });
 });
 
+gulp.task('build', ['buildhtml', 'buildcss', 'buildjs', 'buildimg']);
+
+// Build Html for dist folder
+gulp.task('buildhtml', function () {
+    return gulp.src("app/*.html")
+        .pipe(gulp.dest("dist"));
+});
+
 // AutoPrefixer for 2 last versions in browsers
-gulp.task('autoprefixer', function () {
+// + Minify CSS
+gulp.task('buildcss', function () {
     return gulp.src('app/css/style.css')
         .pipe(postcss([ autoprefixer({browsers: ['last 2 version']}) ]))
+        .pipe(cleanCss({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'));
+});
+
+// Build JavaScript for dist folder
+gulp.task('buildjs', function () {
+    return gulp.src('app/js/script.js')
+        .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('buildimg', function () {
+    return gulp.src('app/img/**')
+        .pipe(gulp.dest('dist/img'));
 });
 
 // Test Task for PostCSS
