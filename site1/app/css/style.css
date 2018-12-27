@@ -699,6 +699,7 @@ input[type="radio"].visually-hidden {
 .price__text {
   width: 108px;
   padding: 11px;
+  margin-bottom: 0;
   text-align: center;
   background-color: lightgray;
 }
