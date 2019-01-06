@@ -13,15 +13,24 @@
 		</label>
 
 		<label>
-			Canvas Size - W:
-			<input class="inputNumb canvW" type="number" min="500" max="1500" value="500"> H:
-			<input class="inputNumb canvH" type="number" min="500" max="1500" value="500">
-			<button class="button canvSizeBut">Change</button>
-
+			BlinkT
+			<input class="inputNumb blink-time" type="number" value="3">
 		</label>
+		<label>
+			BlinkS
+			<input class="inputNumb blink-speed" type="number" value="100">
+		</label>
+
+		W:
+		<input class="inputNumb canvW" type="number" min="500" max="1500" value="900">
+		H:
+		<input class="inputNumb canvH" type="number" min="500" max="1500" value="700">
+		<button class="button canvSizeBut">Change</button>
+
 	</div>
 	<button class="button draw-button">Draw</button>
 	<button class="button hide-button">Show or Hide</button>
+	<button class="button blink">Blink</button>
 	<div class="hide show"></div>
 	<div class="wrapper">
 		<canvas class="canvas" width="900" height="700"></canvas>

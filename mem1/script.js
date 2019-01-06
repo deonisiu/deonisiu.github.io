@@ -41,6 +41,8 @@ window.onload = function () {
 
         console.log("canv.width = " + canv.width);
 
+        hide.classList.add("show");
+
         xCor = startCorX - DELTA/2;
         yCor = startCorY - DELTA;
         xTemp[0] = xCor;
@@ -66,7 +68,26 @@ window.onload = function () {
 
         canv.width = canvW.value;
         canv.height = canvH.value;
-    })
+    });
+
+    var blinkButton = document.querySelector(".blink");
+    var blinkTime = document.querySelector(".blink-time");
+    var blinkSpeed = document.querySelector(".blink-speed");
+    var timerId;
+
+    blinkButton.addEventListener("click", function (event) {
+        timerId = setInterval(blink, blinkSpeed.value);
+    });
+
+    function blink() {
+        hide.classList.toggle("show");
+        console.log("BLINK");
+
+        setTimeout(function () {
+            clearInterval(timerId);
+            // hide.classList.add("show");
+        }, blinkTime.value*1000);
+    }
 };
 
 function createPict(count) {
